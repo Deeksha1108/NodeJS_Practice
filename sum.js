@@ -4,10 +4,10 @@ console.log("Sum Module Executed");
 
 var x = "Hello World";
 
-function calculateSum(a, b) {
+export function calculateSum(a, b) { // yeh export wala pattern MJS ko follow krne k liye kiya h isko (ES Modules, mjs bhi khte h) isse phle wale pattern ko jaha (module.exports) ka use kr rhe the usko (cjs Common JS module khte the)
   const sum = a + b;
   console.log(sum);
 }
 
 // module.exports = { x: x, calculateSum: calculateSum }; // You can write it as well just below line
-module.exports = { x, calculateSum }; // this is the neat way to write
+// module.exports = { x, calculateSum }; // this is the neat way to write
