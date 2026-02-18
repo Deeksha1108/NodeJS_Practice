@@ -18,16 +18,16 @@ async function main() {
   };
 
   //   // Create
-//   const insertResult = await collection.insertOne(data);
-//   console.log("Inserted documents =>", insertResult);
+  // const insertResult = await collection.insertOne(data);
+  // console.log("Inserted documents =>", insertResult);
 
   //   // Read
   //   const findResult = await collection.find({}).toArray();
   //   console.log("Found documents =>", findResult);
 
   //   // Count
-    const countResult = await collection.countDocuments({});
-    console.log("Count of documents in the User Collection =>", countResult);
+  const countResult = await collection.countDocuments({});
+  console.log("Count of documents in the User Collection =>", countResult);
 
   // Find all documents with a filter of firstname: Deeksha
   const res = await collection.find({ firstName: "Deeksha" }).toArray();
